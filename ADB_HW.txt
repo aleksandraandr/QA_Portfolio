@@ -1,0 +1,49 @@
+//Windows. PowerShell
+
+1. Отобразить подключённый девайс в консоли:
+-переходим в директорию C:\Users\aaass\AppData\Local\Android\Sdk\platform-tools
+-зажимаем кнопку Shift + правый клик мышью и запускаем командную строку Windows (PowerShell) с текущей директории
+-проверяем, что устройство правильно подключено и было распознано компьютером
+./adb devices
+
+2.Вывести адрес приложения todolist в системе Android
+-получить список установленных на устройстве приложений в виде названий пакетов
+./adb shell pm list packages
+-проверить, существует ли приложение или нет
+./adb shell pm list packages|findstr todolist
+
+3. Установить .apk файл приложениия todolist на телефон с компьютера через ADB
+-использование для установки приложений без необходимости копировать их на смартфон (если путь apk long и есть пробелы, просто добавьте его между двойными кавычками)
+./adb install "E:\QA_Course\QA_Infa\QA_Homework\10_Android Studio\001_ToDoList-master\001_ToDoList-master\app\build\outputs\apk\debug\app-debug.apk"
+
+P.S. Возникла проблема с установкой. Решение:
+-добавить информацию в файл gradle.properties
+#android:testOnly="false"
+#android:theme="@style/AppTheme"
+-сгенерировать APK по Android studio menu:Build-->Build APK(s)
+
+4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде
+-создание скриншота
+./adb shell screencap /sdcard/screen.png
+-копирование на компьютер
+./adb pull /sdcard/screen.png E:\QA_Course\QA_Infa\QA_Homework\11_ADB\HW_screens
+или
+-если необходимо быстро отправить файл на устройство, для этого можно использовать команду
+./adb push E:\QA_Course\QA_Infa\QA_Homework\11_ADB\HW_screens\images.jpg /sdcard/
+
+-в одну строку
+./adb shell screencap -p /sdcard/screen.png && adb pull /sdcard/screen.png
+
+5. Вывести в консоль логи приложения todolist
+-полный лог можно вывести сразу в файл
+./adb logcat > logcat.txt
+-логи todolist
+./adb logcat|findstr -rnw "com.android.todolist"
+
+6.Скопировать логи приложения todolist на компьютер
+./adb logcat|findstr -rnw "com.android.todolist" > E:\QA_Course\QA_Infa\QA_Homework\11_ADB\HW_screens+logs\todolist.log
+
+7. Удалить приложение todolist с телефона через ADB
+./adb uninstall com.android.todolist
+
+
