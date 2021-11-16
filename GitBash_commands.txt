@@ -1,0 +1,63 @@
+Linux terminal (Git Bash) commands:
+1) Посмотреть, где я: pwd
+2) Создать папку: mkdir NewFolder
+3) Зайти в папку: cd NewFolder
+4) Создать 3 папки: mkdir test_folder_{1..3}
+5) Зайти в любую папку: cd test_folder_1
+6) Создать 5 файлов: (3 txt, 2 json): 
+           touch text{1..3}.txt
+           touch js{1..2}.json
+7) Создать 3 папки: mkdir new_folder_{1..3}
+8) Вывести список содержимого папки: ls 
+                                 или ls -la
+9) Открыть любой txt файл: cat text1.txt 
+		       или vim text1.txt
+10)Написать туда что-нибудь, любой текст: 
+                           cat >>text1.txt 
+                           Life is good! 
+                       или i
+	                   Life is good!
+11)Сохранить и выйти: CTR+D 
+                  или :wq
+12)Выйти из папки на уровень выше: cd ..
+13)Переместить любые 2 файла, которые вы создали, в любую другую папку: 
+    mv text1.txt text2.txt ../test_folder_2
+14)Скопировать любые 2 файла, которые вы создали, в любую другую папку: 
+    cp js1.json js2.json new_folder_1
+или cp text1.txt text2.txt ../test_folder_3
+15)Найти файл по имени: find . -name "*.txt"
+16)Просмотреть содержимое в реальном времени (команда grep), изучите, как она работает: 
+            grep Life text1.txt
+            grep -i life text1.txt
+            grep -R Life test_folder_2
+            grep -R Life .
+            grep -iR life .
+17)Вывести несколько первых строк из текстового файла: head -n5 text3.txt
+18)Вывести несколько последних строк из текстового файла: tail -n5 text3.txt
+19)Просмотреть содержимое длинного файла (команда less), изучите, как она работает: 
+            less text3.txt
+20)Вывести дату и время: date
+
+Задание *
+1) Отправить http запрос на сервер:
+curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+   2.1. touch file.txt
+   2.2. cat >>file.txt
+        #!/bin/bash
+        CTR+D
+   2.3. mv file.txt myscript.txt
+   2.4. chmod u+x myscript.txt
+   2.5. cat >>myscript.txt
+        cd Script
+        mkdir Folder{1..3}
+        cd Folder1
+        touch text{1..3}.txt
+        touch js{1..2}.json
+        mkdir NewFolder{1..3}
+        ls
+        mv text1.txt text2.txt NewFolder1
+        CTR+D
+   2.6. ./myscript.txt
+
+
