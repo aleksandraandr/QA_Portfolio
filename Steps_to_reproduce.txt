@@ -1,0 +1,17 @@
+Android_studio
+
+#Открытие проекта приложения в Android studio
+ToDoList-master.zip [source code] --> Open an existing Android Studio project
+
+#Создание эмулятора
+AVD Manager --> Create virtual device --> Phone Pixel3a --> Android 10.0 --> Next --> Portrait --> AVD name: Group_22_device_Pixel3a --> Finish
+
+#Сборка приложение и запуск приложения на эмуляторе
+Running Device --> choose Group_22_device_Pixel3a --> Run
+
+#Сборка .apk файла
+Build --> Build Bundle(s)/APK(s) --> Build APK(s)
+click "Locate" --> find app-debug.apk
+
+#Сборка приложения и запуск приложения на реальном девайсе
+Android --> Transfer files --> Settings --> About phone --> Build number --> System&updates --> Developer option: choose USB debugging, Always promote when connecting to USB, Allow ADB debugging in charge only mode, Verify apps over USB --> Run
