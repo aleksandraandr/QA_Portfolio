@@ -1,0 +1,64 @@
+Install		
+1.1	AppStore (or TestFlight)	
+1.2	Link from site	
+1.3	iTunes	
+1.4	Xcode	
+1.5	other tool	
+Update		
+2.1	Update from AppStore	
+2.2	Update by the link 	
+2.3	iTunes	
+2.4	Xcode	
+2.5	TestFlight or other tool	
+Delete		
+3.1	Delete using Tools (xCode, iTunes, etc.)	
+3.2	Delete from Home screen	
+Gestures		
+4.1	Tap	
+4.2	Drag	
+4.3	Flick	
+4.4	Swipe	
+4.5	Double tap	
+4.6	Pinch	
+4.7	Touch and hold	
+4.8	Shake	
+Interactions 		
+5.9	3D Touch (Peek and Pop) - from iPhone 6s, iPad pro	
+5.10	Feedback (Haptic Feedback, Unobtrusively integrated status, alerts, etc)	
+5.11	File Handling	
+5.12	Loading	
+5.13	Modality	
+5.14	Navigation between apps (Hierarchical navigation, Flat navigation, Content-driven or experience-driven navigation)	
+5.15	Requesting Permission	
+5.16	Settings	
+5.17	Terminology	
+5.18	Undo and Redo	
+Features		
+6.19	Multitasking	
+6.20	Notifications	
+6.21	Printing	
+6.22	Quick Look	
+6.23	Siri	
+6.24	TV Providers	
+Elements		
+7.25	UI Bars	
+7.26	UI Views	
+7.27	UI Controls	
+Graphics		
+8.28	App Icon 	
+8.29	Custom Icons	
+8.30	Image Size and Resolution	
+8.31	Launch Screen	
+8.32	System Icons	
+Visual Design		
+Technologies		
+9.1	Apple Pay	
+9.2	GameKit	
+9.3	HealthKit	
+9.4	HomeKit	
+9.5	iCloud	
+9.5	In-App Purchase	
+9.6	Live Photos	
+9.7	ResearchKit	
+9.8	Social Media	
+9.9	Wallet	
