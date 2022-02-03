@@ -1,0 +1,27 @@
+{
+	"id": "580cb5cb-6c13-4b39-ab65-4f5960e4a2ed",
+	"name": "Test environment",
+	"values": [
+		{
+			"key": "name",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "age",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "salary",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-02-03T11:53:57.532Z",
+	"_postman_exported_using": "Postman/9.12.0"
+}
